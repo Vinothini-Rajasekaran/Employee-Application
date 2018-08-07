@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lav_Vino_Project", "Lav_Vino_Project\Lav_Vino_Project.csproj", "{B9B1E516-71FF-4A5C-85B0-4EF82E00271B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9B1E516-71FF-4A5C-85B0-4EF82E00271B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B1E516-71FF-4A5C-85B0-4EF82E00271B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B1E516-71FF-4A5C-85B0-4EF82E00271B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B1E516-71FF-4A5C-85B0-4EF82E00271B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12D74042-6164-4B21-B991-7C1B8DF0C84C}
+	EndGlobalSection
+EndGlobal
