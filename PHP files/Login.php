@@ -1,0 +1,21 @@
+<?php
+        $name = $_POST["username"];
+        $pwd = $_POST["password"];
+        $con = mysql_connect("localhost","root","root");
+        if (!$con)
+        {
+        die('Could not connect: ' . mysql_error());
+        }
+        mysql_select_db("Employee", $con);
+        $result = mysql_query("SELECT * FROM signup WHERE uname = '".$name."' AND  pwd = '".$pwd."'");
+        $row = mysql_fetch_array($result);
+       	if($row['uname'] == $name && $row['pwd'] == $pwd)
+        {
+		echo "success";
+        }
+        else
+       	{
+         	echo "failure";
+        }
+        mysql_close($con);
+?>
