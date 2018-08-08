@@ -1,7 +1,9 @@
 <?php
-        $name = $_POST["username"];
-        $pwd = $_POST["password"];
-        $con = mysql_connect("localhost","root","root");
+        //$name = $_POST["username"];
+        //$pwd = $_POST["password"];
+		/*$name = "admin";
+		$pwd = "admin";
+        $con = mysqli_connect("localhost","root","root");
         if (!$con)
         {
         die('Could not connect: ' . mysql_error());
@@ -17,5 +19,6 @@
        	{
          	echo "failure";
         }
-        mysql_close($con);
+        mysql_close($con);*/
+		echo "Hello";
 ?>
