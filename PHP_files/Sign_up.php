@@ -10,7 +10,6 @@
         }
         mysqli_select_db($con, "employee");
 	$result = mysqli_query($con,"INSERT INTO Employee (username, password, employee_id) VALUES ('".$uname."','".$pwd."','".$eid."')");
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
        	if($result)
         {
 		echo "success";

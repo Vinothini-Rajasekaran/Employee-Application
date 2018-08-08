@@ -13,31 +13,31 @@ namespace Lav_Vino_Project {
     public partial class Signup {
         
         /// <summary>
-        /// username control.
+        /// signup_username control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox username;
+        protected global::System.Web.UI.WebControls.TextBox signup_username;
         
         /// <summary>
-        /// password control.
+        /// signup_password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.TextBox signup_password;
         
         /// <summary>
-        /// eid control.
+        /// signup_eid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox eid;
+        protected global::System.Web.UI.WebControls.TextBox signup_eid;
         
         /// <summary>
         /// signup control.

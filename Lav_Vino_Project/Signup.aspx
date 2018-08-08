@@ -10,14 +10,14 @@
 </head>
 <body>
     <h1 align="center" class="color">Employee App</h1>
-    <h2 align="center" class="color">Signup</h2>
+    <h2 align="center" class="color">SignUp</h2>
 
   <div class="signup-form">
-    <form  action="WebForm1.aspx" runat="server">
+    <form runat="server" method="post" action="">
            <div class="signup-content"> 
-            <asp:TextBox  class="field" placeholder="Username" runat="server" ID="username" required></asp:TextBox>
-            <asp:TextBox class="field" placeholder="Password" runat="server" ID="password" Textmode="Password" required></asp:TextBox>
-            <asp:TextBox class="field" placeholder="Employee_id" runat="server" ID="eid" required></asp:TextBox>
+            <asp:TextBox  class="field" placeholder="Username" runat="server" ID="signup_username" required></asp:TextBox>
+            <asp:TextBox class="field" placeholder="Password" runat="server" ID="signup_password" Textmode="Password" required></asp:TextBox>
+            <asp:TextBox class="field" placeholder="Employee_id" runat="server" ID="signup_eid" required></asp:TextBox>
             <asp:button class="btn" runat="server" placeholder="Signup" Text="Signup" ID="signup" OnClick="signup_Click"></asp:button>
            </div>
     </form>

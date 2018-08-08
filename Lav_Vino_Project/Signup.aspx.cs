@@ -18,14 +18,14 @@ namespace Lav_Vino_Project
             using (WebClient client = new WebClient())
             {
                 NameValueCollection signup_info = new NameValueCollection() {
-                {"username", username.Text},
-                { "password", password.Text},
-                { "employee_id", eid.Text}
+                {"username", signup_username.Text},
+                { "password", signup_password.Text},
+                { "employee_id", signup_eid.Text}
             };
 
                 String pagesource = Encoding.UTF8.GetString(client.UploadValues(url, signup_info));
 
-                if (pagesource == "success")
+                if (String.Compare(pagesource,"success")==1)
                 {
                     Server.Transfer("Login.aspx", true);
                 }
