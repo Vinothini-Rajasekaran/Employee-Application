@@ -13,15 +13,18 @@
     <h2 align="center" class="color">Login</h2>
 
   <div class="form">
-    <form  action="WebForm1.aspx" runat="server">
+    <form  runat="server" method="post" action="">
           <asp:Image ID="image" ImageUrl="images/image.png" runat="server" Width="104px" />
            <div class="login-content"> 
             <asp:TextBox  class="field" placeholder="Username" runat="server" ID="username" required></asp:TextBox>
             <asp:TextBox class="field" placeholder="Password" runat="server" ID="password" required></asp:TextBox>
-            <asp:button class="btn" runat="server" placeholder="login" Text="Login" ID="login"></asp:button>
+            <asp:button class="btn" runat="server" placeholder="login" Text="Login" ID="login" onClick="login_Click"/></asp:button>
+             
+
             <asp:HyperLink runat="server" href="Signup.aspx">Not a User? Signup</asp:HyperLink>
            </div>
     </form>
+      
   </div>
 </body>
 </html>
