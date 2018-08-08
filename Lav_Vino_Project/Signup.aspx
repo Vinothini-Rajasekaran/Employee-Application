@@ -13,12 +13,12 @@
     <h2 align="center" class="color">Signup</h2>
 
   <div class="signup-form">
-    <form  action="" runat="server" method="post">
+    <form  action="WebForm1.aspx" runat="server">
            <div class="signup-content"> 
             <asp:TextBox  class="field" placeholder="Username" runat="server" ID="username" required></asp:TextBox>
             <asp:TextBox class="field" placeholder="Password" runat="server" ID="password" Textmode="Password" required></asp:TextBox>
             <asp:TextBox class="field" placeholder="Employee_id" runat="server" ID="eid" required></asp:TextBox>
-            <asp:button class="btn" runat="server" placeholder="Signup" Text="Signup" ID="signup" OnClick="signup_Click" /></asp:button>
+            <asp:button class="btn" runat="server" placeholder="Signup" Text="Signup" ID="signup" OnClick="signup_Click"></asp:button>
            </div>
     </form>
   </div>

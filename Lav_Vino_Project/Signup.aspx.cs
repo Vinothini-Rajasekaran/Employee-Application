@@ -25,15 +25,11 @@ namespace Lav_Vino_Project
 
                 String pagesource = Encoding.UTF8.GetString(client.UploadValues(url, signup_info));
 
-                if (String.Compare(pagesource,"success") == 1)
+                if (pagesource == "success")
                 {
-                    
                     Server.Transfer("Login.aspx", true);
                 }
-               
             }
-
-
 
 
         }
