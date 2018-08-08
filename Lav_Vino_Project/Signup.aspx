@@ -18,7 +18,7 @@
             <asp:TextBox  class="field" placeholder="Username" runat="server" ID="username" required></asp:TextBox>
             <asp:TextBox class="field" placeholder="Password" runat="server" ID="password" required></asp:TextBox>
             <asp:TextBox class="field" placeholder="Employee_id" runat="server" ID="eid" required></asp:TextBox>
-            <asp:button class="btn" runat="server" placeholder="Signup" Text="Signup" ID="login"></asp:button>
+            <asp:button class="btn" runat="server" placeholder="Signup" Text="Signup" ID="login" OnClick="signup_Click"></asp:button>
            </div>
     </form>
   </div>

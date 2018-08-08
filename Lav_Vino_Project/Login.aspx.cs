@@ -15,7 +15,7 @@ namespace Lav_Vino_Project
 
         protected void login_Click(object sender, EventArgs e)
         {
-            string url = "http://localhost/login.php";
+            string url = "http://192.168.0.6/login.php";
             using (WebClient client = new WebClient())
             {
                 NameValueCollection login_info = new NameValueCollection() {

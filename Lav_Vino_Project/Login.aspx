@@ -17,7 +17,7 @@
           <asp:Image ID="image" ImageUrl="images/image.png" runat="server" Width="104px" />
            <div class="login-content"> 
             <asp:TextBox  class="field" placeholder="Username" runat="server" ID="username" required></asp:TextBox>
-            <asp:TextBox class="field" placeholder="Password" runat="server" ID="password" required></asp:TextBox>
+            <asp:TextBox class="field" placeholder="Password" runat="server" ID="password" TextMode="Password" required></asp:TextBox>
             <asp:button class="btn" runat="server" placeholder="login" Text="Login" ID="login" onClick="login_Click"/></asp:button>
              
 
