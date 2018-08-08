@@ -16,7 +16,7 @@
     <form  action="WebForm1.aspx" runat="server">
            <div class="signup-content"> 
             <asp:TextBox  class="field" placeholder="Username" runat="server" ID="username" required></asp:TextBox>
-            <asp:TextBox class="field" placeholder="Password" runat="server" ID="password" required></asp:TextBox>
+            <asp:TextBox class="field" placeholder="Password" Textmode="Password" runat="server" ID="password" required></asp:TextBox>
             <asp:TextBox class="field" placeholder="Employee_id" runat="server" ID="eid" required></asp:TextBox>
             <asp:button class="btn" runat="server" placeholder="Signup" Text="Signup" ID="login"></asp:button>
            </div>
