@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title></title><a href="Scripts/">Scripts/</a>
 </head>
 <body>
     <h2>HElllooo</h2>
