@@ -83,3 +83,9 @@
     color: blueviolet;
     font-family: "Roboto",sans-serif;
 }
+
+.background {
+    background-image: url("images/background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

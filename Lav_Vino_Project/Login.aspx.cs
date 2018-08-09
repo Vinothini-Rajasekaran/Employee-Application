@@ -27,7 +27,7 @@ namespace Lav_Vino_Project
 
                 if (pagesource == "success")
                 {
-                    Server.Transfer("Signup.aspx", true);
+                    Server.Transfer("Home_Page.aspx", true);
                 }
             }
            
