@@ -3,14 +3,14 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title><a href="Scripts/">Scripts/</a>
+<head>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+    <title></title>
 </head>
 <body>
-    <h2>HElllooo</h2>
-        <div class="background">
-            <img src="images/background.jpeg" />
-        </div>
+   
+        
+<asp:Image ID="image" ImageUrl="images/background.jpg" runat="server" CssClass="background" />       
     
 </body>
 </html>
