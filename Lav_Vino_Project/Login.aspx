@@ -18,7 +18,7 @@
            <div class="login-content"> 
             <asp:TextBox  class="field" placeholder="Username" runat="server" ID="username" required></asp:TextBox>
             <asp:TextBox class="field" placeholder="Password" runat="server" ID="password" TextMode="Password" required></asp:TextBox>
-            <asp:button class="btn" runat="server" placeholder="login" Text="Login" ID="login" onClick="login_Click"/></asp:button>
+            <asp:button class="btn" runat="server" placeholder="login" Text="Login" ID="login" onClick="login_Click" Width="261px" />
              
 
             <asp:HyperLink runat="server" href="Signup.aspx">Not a User? Signup</asp:HyperLink>

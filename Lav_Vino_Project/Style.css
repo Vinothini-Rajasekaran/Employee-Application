@@ -3,6 +3,12 @@
     text-transform: uppercase;
 }
 
+.home {
+    background-image: url('images/new.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
 .login-content {   
     padding: 40px;
 }
@@ -52,13 +58,22 @@
     box-sizing: border-box;
 }
 
+.info-field {
+    background-color:transparent;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
+    opacity:0.5;
+}
+
 .btn {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
     font-family: "Roboto",sans-serif;
-    width: 100%;
     margin: 10px auto;
     padding: 15px;
     background: #4CAF50;
-    border: 0;
     box-shadow: 0px 1px 0px 0px #111;
     border-radius: 3px;
     outline: 0;
@@ -92,3 +107,22 @@
     position: absolute;
     background-size:cover;
 }
+
+.btn-new {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    font-family: "Roboto",sans-serif;
+    margin: 10px auto;
+    padding: 15px;
+    background: #4CAF50;
+    box-shadow: 0px 1px 0px 0px #111;
+    border-radius: 3px;
+    outline: 0;
+    color: #FFFFFF;
+    font-size: 14PX;
+    letter-spacing: 0.125em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
