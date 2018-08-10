@@ -84,8 +84,8 @@
     font-family: "Roboto",sans-serif;
 }
 
-.background {
-    background-image: url("images/background.jpeg");
+.body {
+    background-image: url("images/homepage.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }

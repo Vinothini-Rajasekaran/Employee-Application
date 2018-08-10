@@ -4,13 +4,20 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title><a href="Scripts/">Scripts/</a>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
 </head>
 <body>
-    <h2>HElllooo</h2>
-        <div class="background">
-            <img src="images/background.jpeg" />
-        </div>
+    
+    
+        
+    
+    <form id="form1" runat="server">
+        <asp:View ID="View1" runat="server">
+        </asp:View>
+    </form>
+    
+    
+        
     
 </body>
 </html>
