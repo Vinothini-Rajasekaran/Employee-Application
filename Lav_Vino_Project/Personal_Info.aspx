@@ -22,7 +22,7 @@
             CellSpacing="5"
             >
             
-                <asp:TableRow><asp:TableCell>Employee_No</asp:TableCell>
+                <asp:TableRow><asp:TableCell Width="100px">Employee_No</asp:TableCell>
                 <asp:TableCell><asp:Label runat="server" ID="eno"  Cssclass="info-field"></asp:Label></asp:TableCell>
                 </asp:TableRow>
 
