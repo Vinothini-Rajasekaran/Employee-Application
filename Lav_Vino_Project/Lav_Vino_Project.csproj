@@ -161,6 +161,7 @@
     <Content Include="Home_Page.aspx" />
     <Content Include="images\background.jpg" />
     <Content Include="images\image.png" />
+    <Content Include="images\emp1.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Notifications.aspx" />
     <Content Include="Paycheck.aspx" />

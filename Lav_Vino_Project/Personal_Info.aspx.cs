@@ -28,6 +28,7 @@ namespace Lav_Vino_Project
 
                 //Target newTarget = JsonConvert.DeserializeObject<Target>(json);
                 Target newTarget = JsonConvert.DeserializeObject<Target>(json.Substring(1, json.Length - 2));
+                img.ImageUrl = newTarget.image;
 
                 eno.Text = newTarget.emp_no;
                 
@@ -52,6 +53,11 @@ namespace Lav_Vino_Project
         protected void home_Click(object sender, EventArgs e)
         {
             Server.Transfer("Home_Page.aspx", true);
+        }
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Login.aspx", true);
         }
     }
 }

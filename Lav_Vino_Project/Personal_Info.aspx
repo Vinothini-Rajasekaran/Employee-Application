@@ -11,43 +11,46 @@
 </head>
 <body class="home">
     <form id="form1" runat="server">
-        <div runat="server" >
-            
+        <div runat="server" align="right">
+        <asp:Button runat="server" Text="Home" CssClass="btn" ID="home" OnClick="home_Click"></asp:Button>
+        <asp:Button runat="server" Text="Logout" CssClass="btn" ID="logout" OnClick="logout_Click"></asp:Button>
+        
+        </div>
+            <div runat="server" >
+            <asp:Image runat="server" ID="img" />
             <asp:Table ID="Table1" 
             runat="server" 
             Font-Size="X-Large" 
             Width="550" 
-            BorderWidth="2"
             CellPadding="5"
-            CellSpacing="5"
-            >
+            CellSpacing="5" >
             
-                <asp:TableRow><asp:TableCell Width="100px">Employee_No</asp:TableCell>
-                <asp:TableCell><asp:Label runat="server" ID="eno"  Cssclass="info-field"></asp:Label></asp:TableCell>
+                <asp:TableRow><asp:TableCell ForeColor="White" Width="20%" Font-Size="Medium">Employee_No</asp:TableCell>
+                <asp:TableCell><asp:Label runat="server" ID="eno"  Cssclass="info-field" Font-Size="Large"></asp:Label></asp:TableCell>
                 </asp:TableRow>
 
-                 <asp:TableRow><asp:TableCell>First Name</asp:TableCell>
-                <asp:TableCell><asp:Label runat="server" ID="fname"  Cssclass="info-field"></asp:Label>
+                 <asp:TableRow><asp:TableCell ForeColor="White" Font-Size="Medium">First Name</asp:TableCell>
+                <asp:TableCell><asp:Label runat="server" ID="fname"  Cssclass="info-field" Font-Size="Large"></asp:Label>
                 </asp:TableCell></asp:TableRow>
                 
-                <asp:TableRow><asp:TableCell>Last Name</asp:TableCell>
-                <asp:TableCell><asp:Label runat="server" ID="lname" Cssclass="info-field"></asp:Label></asp:TableCell></asp:TableRow>
+                <asp:TableRow><asp:TableCell ForeColor="White" Font-Size="Medium">Last Name</asp:TableCell>
+                <asp:TableCell><asp:Label runat="server" ID="lname" Cssclass="info-field" Font-Size="Large"></asp:Label></asp:TableCell></asp:TableRow>
                  
-                 <asp:TableRow><asp:TableCell>Date of Birth</asp:TableCell>
-                 <asp:TableCell><asp:Label runat="server" ID="bday" Cssclass="info-field"></asp:Label></asp:TableCell></asp:TableRow>
+                 <asp:TableRow><asp:TableCell ForeColor="White" Font-Size="Medium">Date of Birth</asp:TableCell>
+                 <asp:TableCell><asp:Label runat="server" ID="bday" Cssclass="info-field" Font-Size="Large"></asp:Label></asp:TableCell></asp:TableRow>
                
-                <asp:TableRow><asp:TableCell>Gender</asp:TableCell>
-                <asp:TableCell><asp:Label runat="server" ID="gender"  Cssclass="info-field"></asp:Label></asp:TableCell></asp:TableRow>
+                <asp:TableRow><asp:TableCell ForeColor="White" Font-Size="Medium">Gender</asp:TableCell>
+                <asp:TableCell><asp:Label runat="server" ID="gender"  Cssclass="info-field" Font-Size="Large"></asp:Label></asp:TableCell></asp:TableRow>
                
-                <asp:TableRow><asp:TableCell>Department</asp:TableCell>
-                <asp:TableCell><asp:Label runat="server" ID="hdate"  Cssclass="info-field"></asp:Label></asp:TableCell></asp:TableRow>
+                <asp:TableRow><asp:TableCell ForeColor="White" Font-Size="Medium">Department</asp:TableCell>
+                <asp:TableCell><asp:Label runat="server" ID="dname"  Cssclass="info-field" Font-Size="Large"></asp:Label></asp:TableCell></asp:TableRow>
                 
-                <asp:TableRow><asp:TableCell>Hire Date</asp:TableCell>
-                <asp:TableCell><asp:Label runat="server" ID="dname"  Cssclass="info-field"></asp:Label></asp:TableCell>
+                <asp:TableRow><asp:TableCell ForeColor="White" Font-Size="Medium">Hire Date</asp:TableCell>
+                <asp:TableCell><asp:Label runat="server" ID="hdate"  Cssclass="info-field" Font-Size="Large"></asp:Label></asp:TableCell>
                 </asp:TableRow>
 
                 </asp:Table>
-              <asp:Button runat="server" Text="Home" CssClass="btn" ID="home" OnClick="home_Click"></asp:Button>         
+                       
         </div>
     </form>
 </body>
