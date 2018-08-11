@@ -29,7 +29,7 @@ namespace Lav_Vino_Project
                 
                 Target Emp_newTarget = JsonConvert.DeserializeObject<Target>(json1.Substring(1, json1.Length - 2));
 
-                //Emp_img.ImageUrl = Emp_newTarget.image;
+                Emp_img.ImageUrl = Emp_newTarget.image;
 
                 eno.Text = Emp_newTarget.emp_no;
 
