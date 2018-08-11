@@ -2,6 +2,7 @@
 {
     public class Target
     {
+        public string image { get; set; }
         public string emp_no { get; set; }
         public string birth_date { get; set; }
         public string first_name { get; set; }
