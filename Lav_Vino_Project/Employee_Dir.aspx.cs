@@ -15,7 +15,28 @@ namespace Lav_Vino_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string str = ((TextBox)form1.FindControl("Search_name")).Text;
+            //string str = ((TextBox)form1.FindControl("Search_name")).Text;
+            
+
+
+
+        }
+        protected void home_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Home_Page.aspx", true);
+        }
+        protected void logout_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Login.aspx", true);
+        }
+        protected void Search_Click(object sender, EventArgs e)
+        {
+            search1.Visible = false;
+            Table1.Visible = true;
+            Emp_img.Visible = true;
+
+
+            string str = Search_name.Text;
             string url = "http://192.168.0.6/Employee_info.php";
             using (WebClient client = new WebClient())
             {
@@ -24,9 +45,10 @@ namespace Lav_Vino_Project
 
             };
                 String json1 = Encoding.UTF8.GetString(client.UploadValues(url, firstname));
+                eno.Text = json1;
 
                 //Target Emp_newTarget = JsonConvert.DeserializeObject<Target>(json);
-                
+
                 Target Emp_newTarget = JsonConvert.DeserializeObject<Target>(json1.Substring(1, json1.Length - 2));
 
                 Emp_img.ImageUrl = Emp_newTarget.image;
@@ -47,23 +69,6 @@ namespace Lav_Vino_Project
 
 
             };
-
-
-
-        }
-        protected void home_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("Home_Page.aspx", true);
-        }
-        protected void logout_Click(object sender, EventArgs e)
-        {
-            Server.Transfer("Login.aspx", true);
-        }
-        protected void Search_Click(object sender, EventArgs e)
-        {
-            search1.Visible = false;
-            Table1.Visible = true;
-            //Emp_img.Visible = true;
         }
     }
 }

@@ -16,7 +16,7 @@
         </div>
         <div runat="server" >
             <div id="search1" runat="server">
-                <asp:TextBox ID="Search_name" runat="server" placeholder="Employee Name"></asp:TextBox>
+                <asp:TextBox name="name" ID="Search_name" runat="server" placeholder="Employee Name"></asp:TextBox>
                 <asp:Button ID="Search" runat="server" OnClick="Search_Click" Text="Search" />
             </div>
             <asp:Image runat="server" ID="Emp_img" Visible="false"/>
