@@ -31,6 +31,22 @@
     width: 369px;
 }
 
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row {
+    display: flex;
+}
+
+.search_button {
+    float: right;
+    margin-right: 10px;
+}
+
 .form {
     position: relative;
     z-index: 1;

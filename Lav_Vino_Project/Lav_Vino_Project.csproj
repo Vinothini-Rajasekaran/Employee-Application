@@ -268,6 +268,7 @@
     <Compile Include="Paycheck.aspx.designer.cs">
       <DependentUpon>Paycheck.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PayTarget.cs" />
     <Compile Include="Personal_Info.aspx.cs">
       <DependentUpon>Personal_Info.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

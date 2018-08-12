@@ -9,12 +9,21 @@
     <title></title>
 </head>
 <body>
+    <div runat="server" align="right">  
+        <asp:HyperLink runat="server" href="Home_Page.aspx" CssClass="btn" style="text-decoration:none">Home</asp:HyperLink>    
+        <asp:HyperLink runat="server" href="Login.aspx" CssClass="btn" style="text-decoration:none">Logout</asp:HyperLink>
+    </div>
     <form id="form1" runat="server">
-        <div runat="server" align="right">
-            
-            <asp:Button runat="server" Text="Home" CssClass="btn" ID="home" OnClick="home_Click"></asp:Button>         
-
-        </div>
+     
+        <table id="paycheck" visible="false">
+            <tr>
+                <td>
+                    <asp:ListBox ID="ListBox1" runat="server">
+                    </asp:ListBox><br />
+                </td>
+            </tr>
+        </table>
+        <asp:Button align="left" ID="pay_button" runat="server" CssClass="btn" OnClick="Paycheck_Click" Text="paycheck" />
     </form>
 </body>
 </html>

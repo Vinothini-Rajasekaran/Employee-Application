@@ -10,15 +10,22 @@
 </head>
     <body class="home">
     <form id="form1" runat="server">
-        <div runat="server" align="right">
-            <asp:Button runat="server" Text="Home" CssClass="btn" ID="home" OnClick="home_Click"></asp:Button>        
-            <asp:Button runat="server" Text="Logout" CssClass="btn" ID="Logout" OnClick="logout_Click"></asp:Button>  
+        <div runat="server">
+            
+            <div id="search1" runat="server" align="left">
+            
+            <div>
+                <asp:TextBox align="left" name="name" ID="Search_name" runat="server" font-size="20px" placeholder="Employee Name" Height="41px" style="margin-top: 0px" Width="206px"></asp:TextBox>
+                <asp:Button align="left" ID="Search" runat="server" CssClass="btn" OnClick="Search_Click" Text="Search" />
+                <asp:Button align="right" style="float:right" margin-right="1em" runat="server" Text="Logout" CssClass="btn" ID="Logout" OnClick="logout_Click"></asp:Button>&nbsp;
+                <asp:Button align="right" style="float:right" runat="server" Text="Home" CssClass="btn" ID="home" OnClick="home_Click"></asp:Button>        
+                
+            </div>
+            </div>
+
         </div>
         <div runat="server" >
-            <div id="search1" runat="server">
-                <asp:TextBox name="name" ID="Search_name" runat="server" placeholder="Employee Name"></asp:TextBox>
-                <asp:Button ID="Search" runat="server" OnClick="Search_Click" Text="Search" />
-            </div>
+            
             <asp:Image runat="server" ID="Emp_img" Visible="false"/>
             <asp:Table ID="Table1" 
             runat="server" 
@@ -26,7 +33,7 @@
             Font-Size="X-Large" 
             Width="550" 
             CellPadding="5"
-            CellSpacing="5"
+            CellSpacing="5" style="margin-top: 45px"
             >
             
                 <asp:TableRow><asp:TableCell Width="20%" ForeColor="White" Font-Size="Medium">Employee_No</asp:TableCell>

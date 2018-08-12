@@ -45,7 +45,7 @@ namespace Lav_Vino_Project
 
             };
                 String json1 = Encoding.UTF8.GetString(client.UploadValues(url, firstname));
-                eno.Text = json1;
+                //eno.Text = json1;
 
                 //Target Emp_newTarget = JsonConvert.DeserializeObject<Target>(json);
 

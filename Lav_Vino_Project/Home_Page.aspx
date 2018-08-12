@@ -9,16 +9,16 @@
 </head>      
     
      <body class="home">
-         
-       <form runat="server" style="height: 554px">
-        
-           <marquee direction="left" style=" text-decoration:wavy;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:50px;">
+        <marquee direction="left" style=" text-decoration:wavy;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:50px;">
                 <asp:Label ID="text" runat="server"  ForeColor="Cyan" Text="Everyday in everything I'm getting better and better!"></asp:Label>
-            </marquee>
-
-           <div runat="server" align="right">
-             <asp:Button runat="server" Text="Logout" ID="logout" CssClass="btn" OnClick="logout_Click"/>
+        </marquee>
+         <div runat="server" align="right">
+             <asp:HyperLink runat="server" href="Login.aspx" CssClass="btn" style="text-decoration:none">Logout</asp:HyperLink>
          </div>
+       
+         <div class="row">
+         <div class="column">
+         <form runat="server" style="height: 554px">  
           <asp:button class="btn" runat="server"  Text="Personal_Info" ID="personal_info" onClick="personal_info_Click" Width="268px"/>
            
 
@@ -34,7 +34,13 @@
            <p>
           <asp:button class="btn" runat="server"  Text="Paycheck" ID="paycheck" onClick="paycheck_Click" Width="268px"/>
            </p>
-
      </form>
+     </div>
+     <div class="column">
+
+         <h1>hiiiiiiiiiiiiiiii</h1>
+
+     </div>
+     </div>
 </body>
 </html>
