@@ -8,12 +8,17 @@
 
     <title></title>
 </head>
-<body>
+<body class="home">
+    <div runat="server" align="right">
+            <br />
+            <asp:HyperLink runat="server" href="Home_Page.aspx" CssClass="btn" style="text-decoration:none">Home</asp:HyperLink>    
+            <asp:HyperLink runat="server" href="Login.aspx" CssClass="btn" style="text-decoration:none">Logout</asp:HyperLink>    
+
+
+        </div>
     <form id="form1" runat="server">
         
-            <div align="right" runat="server">
-            <asp:Button runat="server" Text="Home" CssClass="btn-new" ID="home" OnClick="home_Click"></asp:Button>         
-            </div>
+            <asp:PlaceHolder runat="server" ID="ph"></asp:PlaceHolder>
         
     </form>
 </body>

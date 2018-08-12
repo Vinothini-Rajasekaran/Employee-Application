@@ -162,6 +162,7 @@
     <Content Include="images\background.jpg" />
     <Content Include="images\image.png" />
     <Content Include="images\emp1.jpg" />
+    <Content Include="Link.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Notifications.aspx" />
     <Content Include="Paycheck.aspx" />
@@ -247,6 +248,13 @@
     <Compile Include="Home_Page.aspx.designer.cs">
       <DependentUpon>Home_Page.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Link.aspx.cs">
+      <DependentUpon>Link.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Link.aspx.designer.cs">
+      <DependentUpon>Link.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -261,6 +269,7 @@
     <Compile Include="Notifications.aspx.designer.cs">
       <DependentUpon>Notifications.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Notify.cs" />
     <Compile Include="Paycheck.aspx.cs">
       <DependentUpon>Paycheck.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -299,6 +308,7 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Target.cs" />
+    <Compile Include="Task_info.cs" />
     <Compile Include="To_Do_List.aspx.cs">
       <DependentUpon>To_Do_List.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

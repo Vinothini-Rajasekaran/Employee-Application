@@ -52,13 +52,13 @@
     z-index: 1;
     background: #FFFFFF;
     max-width: 360px;
-    margin: 0 auto 100px;
+    margin: 0 37px 100px 546px;
     padding: 0 45px 45px 45px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    top: -21px;
-    left: 1px;
-    height: 376px;
+    top: -6px;
+    left: -189px;
+    height: 377px;
     width: 369px;
 }
 
@@ -140,5 +140,20 @@
     letter-spacing: 0.125em;
     text-align: center;
     text-transform: uppercase;
+}
+
+.to-form {
+    width:400px;
+    height:50px;
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    outline: 0;
+    margin: 0 0 0px 0;
+    padding: 15px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
+    box-sizing: border-box;
 }
 
