@@ -7,13 +7,47 @@
           <link href="Style.css" rel="stylesheet" type="text/css" />
     <title></title>
 </head>
-<body>
-    <form id="form1" runat="server">
-        <div runat="server" align="right">
-                        
-            <asp:Button runat="server" Text="Home" CssClass="btn" ID="home" OnClick="home_Click"></asp:Button>         
+<body class="home">
+    
+    <div runat="server" align="right">
+            <br />
+            <asp:HyperLink runat="server" href="Home_Page.aspx" CssClass="btn" style="text-decoration:none">Home</asp:HyperLink>    
+            <asp:HyperLink runat="server" href="Login.aspx" CssClass="btn" style="text-decoration:none">Logout</asp:HyperLink>    
+
 
         </div>
+    <form id="form2" runat="server" action="" method="post">
+        
+  
+         <div runat="server" align="left">            
+             <asp:TextBox  class="to-form" placeholder="Task Name" runat="server" ID="tname" required></asp:TextBox>
+           </div>
+
+        <p>
+            <asp:TextBox class="to-form" placeholder="Duration" runat="server" ID="duration"  required></asp:TextBox>
+            </p>
+        <p>
+            <asp:TextBox class="to-form" placeholder="Start Date" runat="server" ID="sdate" required></asp:TextBox>
+            </p>
+        <p>
+            <asp:TextBox class="to-form" placeholder="End Date" runat="server" ID="edate" required></asp:TextBox>
+             </p>
+        <p>
+             <asp:TextBox class="to-form" placeholder="Status" runat="server" ID="status" required></asp:TextBox>
+            </p>
+        <p>
+            <asp:TextBox class="to-form" placeholder="Description" runat="server" ID="desc" required></asp:TextBox>
+          
+             </p>
+<p>
+            <asp:TextBox class="to-form" placeholder="Employee No" runat="server" ID="emp_no" required></asp:TextBox>
+          
+             </p>
+        <p>
+          
+             <asp:button class="btn" runat="server" placeholder="Add" Text="Add" ID="add" OnClick="add_Click"></asp:button>
+           </p>
+            
     </form>
 </body>
 </html>
