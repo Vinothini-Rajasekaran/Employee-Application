@@ -11,15 +11,19 @@
     <body class="home">
     <form id="form1" runat="server">
         <div runat="server">
-            
+            <h3 runat="server" style="color:white;">
+            <asp:Button align="right" style="float:right" margin-right="1em" runat="server" Text="Logout" CssClass="btn" ID="Logout" OnClick="logout_Click"></asp:Button>
+            <asp:Button align="right" style="float:right" runat="server" Text="Home" CssClass="btn" ID="home" OnClick="home_Click"></asp:Button>        
+             
+                Employee Directory</h3>
+            &nbsp;
+                         
             <div id="search1" runat="server" align="left">
             
             <div>
                 <asp:TextBox align="left" name="name" ID="Search_name" runat="server" font-size="20px" placeholder="Employee Name" Height="41px" style="margin-top: 0px" Width="206px"></asp:TextBox>
                 <asp:Button align="left" ID="Search" runat="server" CssClass="btn" OnClick="Search_Click" Text="Search" />
-                <asp:Button align="right" style="float:right" margin-right="1em" runat="server" Text="Logout" CssClass="btn" ID="Logout" OnClick="logout_Click"></asp:Button>&nbsp;
-                <asp:Button align="right" style="float:right" runat="server" Text="Home" CssClass="btn" ID="home" OnClick="home_Click"></asp:Button>        
-                
+                   
             </div>
             </div>
 

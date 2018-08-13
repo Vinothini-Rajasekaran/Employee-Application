@@ -26,7 +26,7 @@
           <asp:button class="btn" runat="server" Text="Employee_Directory" ID="employee_dir" onClick="employee_dir_Click" Width="268px"/>
            </p>
            <p>
-          <asp:button class="btn" runat="server"  Text="Notifications" ID="notifications" onClick="notifications_Click" Width="268px"/>
+          <asp:button class="btn" runat="server"  Text="Task Planner" ID="notifications" onClick="notifications_Click" Width="268px"/>
            </p>
            <p>
           <asp:button class="btn" runat="server"  Text="To_Do_List" ID="to_do_list" onClick="to_do_list_Click" Width="268px"/>
@@ -36,7 +36,7 @@
            </p>
      </form>
      </div>
-     <div class="column">
+     <div class="column" >
          <marquee direction="Left" behaviour="slide">
 
        <!--  <asp:HyperLink runat="server" ID="first" NavigateUrl="~/News.aspx">

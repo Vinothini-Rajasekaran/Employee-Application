@@ -9,15 +9,15 @@
 </head>
 <body class="home">
     
-    <div runat="server" align="right">
-            <br />
-            <asp:HyperLink runat="server" href="Home_Page.aspx" CssClass="btn" style="text-decoration:none">Home</asp:HyperLink>    
-            <asp:HyperLink runat="server" href="Login.aspx" CssClass="btn" style="text-decoration:none">Logout</asp:HyperLink>    
-
-
-        </div>
+    
     <form id="form2" runat="server" action="" method="post">
+        <div runat="server">
+        <h3 runat="server" style="color:white;">
+         <asp:Button align="right" style="float:right" margin-right="1em" runat="server" Text="Logout" CssClass="btn" ID="Logout" OnClick="logout_Click"></asp:Button>
+            <asp:Button align="right" style="float:right" runat="server" Text="Home" CssClass="btn" ID="home" OnClick="home_Click"></asp:Button>        
+                To Do List</h3>
         
+        </div>
   
          <div runat="server" align="left">            
              <asp:TextBox  class="to-form" placeholder="Task Name" runat="server" ID="tname" required></asp:TextBox>

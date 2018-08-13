@@ -38,14 +38,21 @@ namespace Lav_Vino_Project
                
                 if (String.Compare(pagesource, "success") == 1)
                 {
-                    Server.Transfer("Home_Page.aspx", true);
+                    Server.Transfer("To_Do_List.aspx", true);
                 }
-                else
-                {
-                    Server.Transfer("Login.aspx", true);
-                }
+                
             }
 
+        }
+
+        protected void home_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Home_Page.aspx", true);
+        }
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Login.aspx", true);
         }
     }
 }

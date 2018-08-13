@@ -42,16 +42,18 @@ namespace Lav_Vino_Project
                     ph.Controls.Add(link);
                     i++;
                 }
-
-                
-                
-                
+  
 
             }
         }
             protected void home_Click(object sender, EventArgs e)
         {
             Server.Transfer("Home_Page.aspx", true);
+        }
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Login.aspx", true);
         }
     }
 }

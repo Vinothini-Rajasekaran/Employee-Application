@@ -57,6 +57,11 @@ namespace Lav_Vino_Project
         {
             Server.Transfer("Home_Page.aspx", true);
         }
-        
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("Login.aspx", true);
+        }
+
     }
 }

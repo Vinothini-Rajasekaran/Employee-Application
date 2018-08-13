@@ -11,11 +11,13 @@
 <body class="home">
     
     <form id="form1" runat="server">
-        <div runat="server" align="right">
-        <asp:Button runat="server" Text="Home" CssClass="btn" ID="home" OnClick="home_Click"></asp:Button>
-        <asp:Button runat="server" Text="Logout" CssClass="btn" ID="logout" OnClick="logout_Click"></asp:Button>
         
-        </div>
+        <div runat="server">
+        <h3 runat="server" style="color:white;">
+         <asp:Button align="right" style="float:right" margin-right="1em" runat="server" Text="Logout" CssClass="btn" ID="Logout" OnClick="logout_Click"></asp:Button>
+            <asp:Button align="right" style="float:right" runat="server" Text="Home" CssClass="btn" ID="home" OnClick="home_Click"></asp:Button>        
+                Paycheck Details</h3>
+            </div>
         <div runat="server">
              <asp:Table ID="Table1" 
             runat="server" 
