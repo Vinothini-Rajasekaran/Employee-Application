@@ -37,8 +37,31 @@
      </form>
      </div>
      <div class="column">
+         <marquee direction="Left" behaviour="slide">
 
-         <h1>hiiiiiiiiiiiiiiii</h1>
+       <!--  <asp:HyperLink runat="server" ID="first" NavigateUrl="~/News.aspx">
+             <asp:Image runat="server"  ImageUrl="~/images/1.jpg" Width="70%" Height="20%"/><br />
+         </asp:HyperLink>
+        
+         <asp:HyperLink runat="server" ID="second" NavigateUrl="~/News.aspx">    
+        <asp:Image runat="server"  ImageUrl="~/images/2.jpg" Width="70%" Height="20%"/><br />
+        </asp:HyperLink>
+
+        <asp:HyperLink runat="server" ID="third" NavigateUrl="~/News.aspx">
+             <asp:Image runat="server"  ImageUrl="~/images/3.jpg" Width="70%" Height="20%"/><br />
+        </asp:HyperLink>
+
+        <asp:HyperLink runat="server" ID="fourth" NavigateUrl="~/News.aspx">
+             <asp:Image runat="server"  ImageUrl="~/images/4.jpg" Width="70%" Height="20%"/><br />
+        </asp:HyperLink>
+
+        <asp:HyperLink runat="server" ID="five" NavigateUrl="~/News.aspx">
+             <asp:Image runat="server"  ImageUrl="~/images/5.jpg" Width="70%" Height="20%"/><br />
+        </asp:HyperLink>-->
+
+            <asp:PlaceHolder runat="server" ID="pl"></asp:PlaceHolder>
+         </marquee>
+          
 
      </div>
      </div>

@@ -159,12 +159,13 @@
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Home_Page.aspx" />
-    <Content Include="images\background.jpg" />
     <Content Include="images\image.png" />
     <Content Include="images\emp1.jpg" />
     <Content Include="Link.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="News.aspx" />
     <Content Include="Notifications.aspx" />
+    <Content Include="Pay.aspx" />
     <Content Include="Paycheck.aspx" />
     <Content Include="Personal_Info.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -262,6 +263,14 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News_info.cs" />
     <Compile Include="Notifications.aspx.cs">
       <DependentUpon>Notifications.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -270,6 +279,13 @@
       <DependentUpon>Notifications.aspx</DependentUpon>
     </Compile>
     <Compile Include="Notify.cs" />
+    <Compile Include="Pay.aspx.cs">
+      <DependentUpon>Pay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay.aspx.designer.cs">
+      <DependentUpon>Pay.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paycheck.aspx.cs">
       <DependentUpon>Paycheck.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -278,6 +294,7 @@
       <DependentUpon>Paycheck.aspx</DependentUpon>
     </Compile>
     <Compile Include="PayTarget.cs" />
+    <Compile Include="Pay_info.cs" />
     <Compile Include="Personal_Info.aspx.cs">
       <DependentUpon>Personal_Info.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

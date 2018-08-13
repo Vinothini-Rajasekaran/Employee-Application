@@ -33,14 +33,21 @@ namespace Lav_Vino_Project
 
                 String[] split = { "." };
                 string[] pay = nw.Split('.');
+                int i = 0;
 
                 foreach(var p in pay)
                 {
-                    PayTarget pay_newTarget = JsonConvert.DeserializeObject<PayTarget>(p);
-                    ListBox1.Items.Add(new ListItem(p));
-                    
+                    PayTarget pay_info = JsonConvert.DeserializeObject<PayTarget>(p);
+                    HyperLink link = new HyperLink();
+                    link.ID = "link" + i;
+                    link.ForeColor = System.Drawing.Color.White;
+                    link.Text = pay_info.from_date +" to " +pay_info.to_date+"<br/><br/>";
+                    link.NavigateUrl = "Pay.aspx?id=" + pay_info.from_date;
+                    ph.Controls.Add(link);
+                    i++;
+
                 }
-                //var Emp_newTarget = JsonConvert.DeserializeObject<PayTarget>(new StringReader(sub_json1)).ToList();
+                
                 
                 
             }
@@ -50,9 +57,6 @@ namespace Lav_Vino_Project
         {
             Server.Transfer("Home_Page.aspx", true);
         }
-        protected void Paycheck_Click(object sender, EventArgs e)
-        {
-            //ListBox1.Items.Add(new ListItem("Carbon"));
-        }
+        
     }
 }

@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Newtonsoft.Json;
 
 namespace Lav_Vino_Project
 {
@@ -11,6 +14,28 @@ namespace Lav_Vino_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string url = "http://192.168.0.6/News.php";
+            using (WebClient client = new WebClient())
+            {
+                String json = client.DownloadString(url);
+
+                String sub_json1 = json.Substring(1, json.Length - 2);
+                string nw = sub_json1.Replace("},", "}*");
+                string[] pay = nw.Split('*');
+                int i = 0;
+
+                foreach (var v in pay)
+                {
+                    News_info news = JsonConvert.DeserializeObject<News_info>(v);
+                    HyperLink link = new HyperLink();
+                    link.NavigateUrl = "~/News.aspx?id="+news.info;
+                    link.ID = "link"+i;
+                    link.ImageUrl = news.img;
+                   
+                    pl.Controls.Add(link);
+                    i++;
+                }
+            }
         }
 
         protected void personal_info_Click(object sender, EventArgs e)
@@ -42,5 +67,7 @@ namespace Lav_Vino_Project
         {
             Server.Transfer("Login.aspx", true);
         }
+
+         
     }
 }

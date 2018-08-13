@@ -8,22 +8,15 @@
 
     <title></title>
 </head>
-<body>
+<body class="home">
     <div runat="server" align="right">  
+        <br />
         <asp:HyperLink runat="server" href="Home_Page.aspx" CssClass="btn" style="text-decoration:none">Home</asp:HyperLink>    
         <asp:HyperLink runat="server" href="Login.aspx" CssClass="btn" style="text-decoration:none">Logout</asp:HyperLink>
     </div>
     <form id="form1" runat="server">
      
-        <table id="paycheck" visible="false">
-            <tr>
-                <td>
-                    <asp:ListBox ID="ListBox1" runat="server">
-                    </asp:ListBox><br />
-                </td>
-            </tr>
-        </table>
-        <asp:Button align="left" ID="pay_button" runat="server" CssClass="btn" OnClick="Paycheck_Click" Text="paycheck" />
+        <asp:PlaceHolder runat="server" ID="ph"></asp:PlaceHolder>
     </form>
 </body>
 </html>

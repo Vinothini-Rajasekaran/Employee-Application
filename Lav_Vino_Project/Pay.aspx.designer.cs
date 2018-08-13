@@ -10,114 +10,87 @@
 namespace Lav_Vino_Project {
     
     
-    public partial class Home_Page {
+    public partial class Pay {
         
         /// <summary>
-        /// text control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label text;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// personal_info control.
+        /// home control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button personal_info;
+        protected global::System.Web.UI.WebControls.Button home;
         
         /// <summary>
-        /// employee_dir control.
+        /// logout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button employee_dir;
+        protected global::System.Web.UI.WebControls.Button logout;
         
         /// <summary>
-        /// notifications control.
+        /// Table1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button notifications;
+        protected global::System.Web.UI.WebControls.Table Table1;
         
         /// <summary>
-        /// to_do_list control.
+        /// fdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button to_do_list;
+        protected global::System.Web.UI.WebControls.Label fdate;
         
         /// <summary>
-        /// paycheck control.
+        /// tdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button paycheck;
+        protected global::System.Web.UI.WebControls.Label tdate;
         
         /// <summary>
-        /// first control.
+        /// salary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink first;
+        protected global::System.Web.UI.WebControls.Label salary;
         
         /// <summary>
-        /// second control.
+        /// ftax control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink second;
+        protected global::System.Web.UI.WebControls.Label ftax;
         
         /// <summary>
-        /// third control.
+        /// stax control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink third;
-        
-        /// <summary>
-        /// fourth control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink fourth;
-        
-        /// <summary>
-        /// five control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink five;
-        
-        /// <summary>
-        /// pl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder pl;
+        protected global::System.Web.UI.WebControls.Label stax;
     }
 }

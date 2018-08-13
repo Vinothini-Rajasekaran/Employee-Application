@@ -10,7 +10,7 @@
 namespace Lav_Vino_Project {
     
     
-    public partial class Paycheck {
+    public partial class News {
         
         /// <summary>
         /// form1 control.
@@ -22,12 +22,21 @@ namespace Lav_Vino_Project {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// ph control.
+        /// image control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder ph;
+        protected global::System.Web.UI.WebControls.Image image;
+        
+        /// <summary>
+        /// text control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox text;
     }
 }
