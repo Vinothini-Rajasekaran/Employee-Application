@@ -30,6 +30,12 @@ namespace Lav_Vino_Project
                 {
                     Server.Transfer("Home_Page.aspx", true);
                 }
+                else
+                {
+                    Response.Write("<script type='text/javascript'>");
+                    Response.Write("alert('Invalid username or password');");
+                    Response.Write("</script>");
+                }
             }
            
             

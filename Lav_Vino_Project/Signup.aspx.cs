@@ -25,9 +25,15 @@ namespace Lav_Vino_Project
 
                 String pagesource = Encoding.UTF8.GetString(client.UploadValues(url, signup_info));
 
-                if (String.Compare(pagesource ,"success")==1)
+                if (String.Compare(pagesource, "success") == 1)
                 {
                     Server.Transfer("Login.aspx", true);
+                }
+                else
+                {
+                    Response.Write("<script type='text/javascript'>");
+                    Response.Write("alert('User already Registered!');");
+                    Response.Write("</script>");
                 }
             }
 
